@@ -12,5 +12,5 @@ class TigerItem(scrapy.Item):
     price = scrapy.Field()
     product_details = scrapy.Field()
     image_url = scrapy.Field()
-    product_coode = scrapy.Field()
+    product_code = scrapy.Field()
 
