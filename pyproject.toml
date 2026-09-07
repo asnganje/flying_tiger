@@ -7,7 +7,15 @@ authors = [
     { name = "asnganje", email = "abd.nganje@gmail.com" }
 ]
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "google-api-python-client>=2.200.0",
+    "google-auth>=2.57.1",
+    "openpyxl>=3.1.5",
+    "pandas>=3.0.5",
+    "python-dotenv>=1.2.3",
+    "scrapy>=2.18.0",
+    "scrapy-playwright>=0.0.48",
+]
 
 [project.scripts]
 flying-tiger = "flying_tiger:main"
@@ -15,3 +23,8 @@ flying-tiger = "flying_tiger:main"
 [build-system]
 requires = ["uv_build>=0.12.5,<0.13.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
