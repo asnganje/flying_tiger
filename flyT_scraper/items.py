@@ -5,9 +5,11 @@
 
 from dataclasses import dataclass
 
+import scrapy
 
-@dataclass
-class FlytScraperItem:
-    # define the fields for your item here like:
-    # name: str | None = None
-    pass
+class TigerItem(scrapy.Item):
+    name = scrapy.Field()
+    price = scrapy.Field()
+    product_details = scrapy.Field()
+    image_url = scrapy.Field()
+
