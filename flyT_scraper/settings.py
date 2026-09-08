@@ -58,9 +58,9 @@ DOWNLOAD_DELAY = 1
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    "flyT_scraper.pipelines.FlytScraperPipeline": 300,
-#}
+ITEM_PIPELINES = {
+   "flyT_scraper.pipelines.ExcelPipeline": 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
